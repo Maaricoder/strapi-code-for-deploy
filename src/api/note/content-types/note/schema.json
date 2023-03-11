@@ -31,24 +31,24 @@
       "required": true
     },
     "file": {
-      "allowedTypes": [
-        "files"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
     },
     "title": {
       "type": "string",
       "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
