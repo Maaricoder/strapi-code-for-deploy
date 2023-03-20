@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notes_uploads",
+  "info": {
+    "singularName": "notes-upload",
+    "pluralName": "notes-uploads",
+    "displayName": "Notes_upload"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Database Notes",
+        "Programming Notes",
+        "Interviews Notes",
+        "Javascript Framework",
+        "dsa",
+        "Java Framework",
+        "C++ Framework"
+      ],
+      "required": true
+    },
+    "writer": {
+      "type": "string",
+      "required": true
+    },
+    "uploader_name": {
+      "type": "string",
+      "required": true
+    },
+    "uploader_email": {
+      "type": "email",
+      "required": true
+    },
+    "uploaded_notes": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
